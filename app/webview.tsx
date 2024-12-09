@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, TouchableOpacity, Text, Image } from "react-native";
 import { WebView } from "react-native-webview";
 
 const WebViewScreen = () => {
@@ -7,7 +7,7 @@ const WebViewScreen = () => {
     <View style={styles.container}>
       <WebView
         source={{ uri: "http://www.polycube.co.kr/v2/" }}
-        style={styles.container}
+        style={styles.webview}
       />
     </View>
   );
@@ -15,6 +15,9 @@ const WebViewScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+  },
+  webview: {
     flex: 1,
   },
 });
